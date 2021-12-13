@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+
+    android:id="@+id/cardview_review_books"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="6dp"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/book_review_user_img_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            cardview:cardCornerRadius="25dp"
+            android:layout_marginStart="16dp"
+            android:elevation="10dp"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:id="@+id/book_review_user_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@color/YellowDark"
+                android:background="#222d"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/book_review_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Provakor Das"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            cardview:layout_constraintStart_toEndOf="@+id/book_review_user_img_card"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <RatingBar
+            android:id="@+id/book_review_rating"
+            style="@style/customRatingBar"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:rating="3.5"
+            android:stepSize="0.5"
+            cardview:layout_constraintStart_toEndOf="@+id/book_review_user_img_card"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_review_user_name" />
+
+        <TextView
+            android:id="@+id/book_review_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="07/July/2020"
+            android:textSize="10sp"
+            cardview:layout_constraintStart_toEndOf="@+id/book_review_rating"
+            cardview:layout_constraintTop_toTopOf="@+id/book_review_rating" />
+
+        <TextView
+            android:id="@+id/book_review_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/long_text"
+            android:textSize="14sp"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="@+id/book_review_user_img_card"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_review_user_img_card" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/book_review_admin_cardimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            cardview:cardCornerRadius="25dp"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_review_text">
+
+            <ImageView
+                android:id="@+id/book_review_admin_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+
+                android:background="#222d"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/book_review_admin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Foyez Ahmed Bappy"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            cardview:layout_constraintStart_toEndOf="@+id/book_review_admin_cardimg"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_review_text" />
+
+        <TextView
+            android:id="@+id/book_review_user_typp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Admin"
+            cardview:layout_constraintStart_toEndOf="@+id/book_review_admin_cardimg"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_review_admin_name" />
+
+        <EditText
+            android:id="@+id/book_review_admin_reply_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Reply                           "
+            android:layout_marginRight="20dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            cardview:layout_constraintEnd_toEndOf="@+id/book_review_text"
+            cardview:layout_constraintStart_toStartOf="@+id/book_review_user_typp"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_review_admin_cardimg" />
+
+        <Button
+            android:id="@+id/book_review_admin_reply_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingHorizontal="10dp"
+            android:text="Sent"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            cardview:layout_constraintEnd_toEndOf="@+id/book_review_text"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_review_admin_reply_edit" />
+
+        <TextView
+            android:id="@+id/book_review_admin_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/long_text"
+
+            android:textSize="14sp"
+            cardview:layout_constraintStart_toStartOf="@+id/book_review_admin_cardimg"
+            cardview:layout_constraintTop_toBottomOf="@+id/book_review_admin_reply_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

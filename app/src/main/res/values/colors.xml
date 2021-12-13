@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDarkDEEP">#283593</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#536DFE</color>
+    <color name="colorAccentLight">#B3E5FC</color>
+
+    <color name="Blue900">#040c42</color>
+    <color name="Blue700">#141f69</color>
+    <color name="Blue500">#374499</color>
+    <color name="Blue300">#6974c2</color>
+    <color name="Blue200">#9ca3d9</color>
+    <color name="Blue100">#d5d8f0</color>
+    <color name="Blue50">#d5d8f0</color>
+    <color name="Blue10">#e8eafc</color>
+    <color name="Blue8">#f7f8ff</color>
+
+
+    <color name="Blue6">#fcfdff</color>
+
+
+
+    <color name="colorText900">#000000</color>
+    <color name="colorText700">#272D2F</color>
+    <color name="colorText500">#687A84</color>
+    <color name="colorText300">#666E7A</color>
+    <color name="colorText200">#A3A8AF</color>
+    <color name="colorText100">#ADB3C1</color>
+    <color name="colorTextDeep">#c7cbd4</color>
+
+    <color name="colorOrange600">#FE724C</color>
+    <color name="colorOrange400">#ff815e</color>
+    <color name="colorOrange200">#ff9173</color>
+    <color name="colorOrange50">#fde4de</color>
+    <color name="colorOrange10">#feeee9</color>
+
+    <color name="colorGreen600">#11cd5c</color>
+    <color name="colorGreen400">#30e377</color>
+    <color name="colorGreen200">#5af296</color>
+    <color name="colorGreen100">#92fcbc</color>
+    <color name="colorGreen50">#c2ffda</color>
+    <color name="colorGreen10">#cff5de</color>
+    <color name="colorGreenKochua">#B6C867</color>
+
+    <color name="colorDeepGrayBlue">#2d4059</color>
+    <color name="colorSweetBue">#03A9F4</color>
+    <color name="colorOffWhite">#decdc3</color>
+
+    <color name="colorGray500">#a3a3a3</color>
+    <color name="colorGray">#c9c9c9</color>
+    <color name="colorLightGray">#e5e5e5</color>
+    <color name="colorLightLightGray">#f4f3f3</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+
+    <color name="duskYellow">#A69D62</color>
+    <color name="Yellow">#F79028</color>
+    <color name="YellowDark">#F07D0E</color>
+
+
+    <color name="Green">#08AE36</color>
+</resources>

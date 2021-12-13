@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview_pb_cart_b"
+    android:background="@color/Blue8"
+
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue8"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/delivery_status_date_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText700"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:text="06 June\n2020"
+                android:textAlignment="textEnd"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/delivery_status_bar_icon"
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:background="@color/colorGray">
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/delivery_status_round_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+
+                android:background="@drawable/style_ripple_status_point"/>
+            <LinearLayout
+                android:id="@+id/delivery_status_round_icon_bottom"
+                android:visibility="invisible"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+
+                android:orientation="vertical"
+                android:background="@drawable/style_ripple_status_point"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp">
+            <TextView
+                android:id="@+id/delivery_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText700"
+                android:text="Processing"
+                android:fontFamily="sans-serif-light"
+                android:layout_gravity="start"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/delivery_status_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif"
+                android:maxLines="3"
+                android:text="@string/long_text"
+                android:textColor="@color/colorText500" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

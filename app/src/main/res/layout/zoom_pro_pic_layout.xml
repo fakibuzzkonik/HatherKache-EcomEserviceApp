@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/user_profile_cover_img"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#222d" />
+
+    <ImageView
+        android:id="@+id/user_profile_propic_img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorLightGray"
+        app:layout_constraintBottom_toBottomOf="@+id/user_profile_cover_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_cover_img"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <TextView
+        android:id="@+id/user_profile_followers_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13K"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@id/user_profile_books_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_acitivity_time" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FOLLOWERS"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toEndOf="@+id/user_profile_followers_count"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/user_profile_followers_count"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_followers_count" />
+
+    <TextView
+        android:id="@+id/user_profile_books_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="400"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_profile_followers_count"
+        app:layout_constraintTop_toTopOf="@+id/user_profile_followers_count" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOKS"
+        app:layout_constraintEnd_toEndOf="@+id/user_profile_books_count"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/user_profile_books_count"
+        app:layout_constraintTop_toBottomOf="@id/user_profile_books_count" />
+
+    <TextView
+        android:id="@+id/user_profile_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="User Name"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-light"
+
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_propic_img" />
+
+    <TextView
+        android:id="@+id/user_profile_acitivity_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 2 minutes ago"
+        android:fontFamily="sans-serif-light"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/user_profile_name_text"
+        app:layout_constraintStart_toStartOf="@+id/user_profile_name_text"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_name_text" />
+
+    <TextView
+        android:id="@+id/user_profile_bio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/colorTextDeep"
+        android:layout_marginEnd="20dp"
+        android:text="@string/long_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <Button
+        android:id="@+id/user_profile_edit_btn"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:text="EDIT"
+        android:textSize="11sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/style_ripple_btn_four_round"
+        app:layout_constraintEnd_toStartOf="@+id/user_profile_order"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_bio" />
+
+    <Button
+        android:id="@+id/user_profile_order"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/style_ripple_btn_four_round"
+        android:text="Orders"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="11sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/user_profile_my_works_btn"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_bio" />
+
+    <Button
+        android:id="@+id/user_profile_my_works_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/style_ripple_btn_four_round"
+        android:text="My Works"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="11sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/linearlayout_bar_one"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_bio" />
+
+    <TextView
+        android:id="@+id/user_profile_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="About : "
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintStart_toStartOf="@+id/user_profile_bio"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_edit_btn" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_bar_one"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="40dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_about"
+        tools:layout_editor_absoluteX="24dp" />
+
+    <TextView
+        android:id="@+id/user_profile_birthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="10dp"
+        android:text="Wish Him : 17th May"
+        android:textColor="@color/colorText700"
+        app:layout_constraintStart_toStartOf="@+id/user_profile_about"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout_bar_one" />
+
+    <TextView
+        android:id="@+id/user_profile_contact_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Contact number : 01726338108"
+        android:textColor="@color/colorText700"
+        app:layout_constraintStart_toStartOf="@+id/user_profile_birthdate"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_birthdate" />
+
+    <TextView
+        android:id="@+id/user_profile_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Registerted on : 25th July 2020"
+        android:textColor="@color/colorText700"
+        app:layout_constraintStart_toEndOf="@+id/user_profile_contact_no"
+        app:layout_constraintStart_toStartOf="@+id/user_profile_contact_no"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_contact_no" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_bar_two"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/linearlayout_bar_one"
+        app:layout_constraintTop_toBottomOf="@+id/user_profile_registration" />
+    <Button
+        android:id="@+id/userprofile_my_shop_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="MyShop"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style_ripple_btn_four_round"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout_bar_two" />
+    <Button
+        android:id="@+id/userprofile_ride_orders_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Ride Orders"
+        android:background="@drawable/style_ripple_btn_four_round"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userprofile_my_shop_btn" />
+
+    <Button
+        android:id="@+id/userprofile_logout_btn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Logout"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/style_ripple_btn_four_round"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userprofile_ride_orders_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

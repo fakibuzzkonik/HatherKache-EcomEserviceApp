@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    android:layout_marginLeft="10dp"
+    android:layout_marginVertical="10dp"
+    android:id="@+id/cardview_level_c_item"
+
+    android:clickable="true"
+
+
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="26dp"
+    android:focusable="true">
+    <!--android:foreground="?android:attr/selectableItemBackground"-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="horizontal"
+        android:layout_width="260dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="left"
+        android:layout_height="match_parent"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_level_c_imgcard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:elevation="10dp"
+
+            cardview:cardCornerRadius="26dp"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent" >
+
+
+            <ImageView
+                android:id="@+id/item_level_c_img_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#222d"
+                android:scaleType="centerCrop"
+                cardview:layout_constraintEnd_toEndOf="parent"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:minHeight="80dp"
+                android:layout_height="110dp"
+                android:background="@drawable/style_ripple_slide_textback_a"
+                android:orientation="vertical"
+                android:layout_gravity="bottom" >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/item_level_c_title_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxWidth="160dp"
+                            android:maxLines="2"
+                            android:text="Docto Zindabazar"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/item_level_c_bio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/item_level_c_title_id"
+                            android:layout_marginHorizontal="17dp"
+                            android:layout_marginBottom="5dp"
+                            android:maxLines="2"
+                            android:fontFamily="sans-serif-light"
+                            android:text="sdfghdfh"
+                            android:textAlignment="center"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

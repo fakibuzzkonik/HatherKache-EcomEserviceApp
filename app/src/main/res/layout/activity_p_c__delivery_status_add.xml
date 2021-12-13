@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Ui.PC_DeliveryStatusAdd">
+
+    <TextView
+        android:id="@+id/delivery_add_head_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add Delivery Status"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/delivery_add_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/delivery_add_head_text"
+        app:layout_constraintStart_toStartOf="@+id/delivery_add_head_text"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_add_head_text">
+
+        <RadioButton
+            android:id="@+id/delivery_add_radio_btn_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Pending" />
+
+        <RadioButton
+            android:id="@+id/delivery_add_radio_btn_confirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Confirmed" />
+
+        <RadioButton
+            android:id="@+id/delivery_add_radio_btn_processing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Processing" />
+
+        <RadioButton
+            android:id="@+id/delivery_add_radio_btn_picked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Picked" />
+
+        <RadioButton
+            android:id="@+id/delivery_add_radio_btn_contacting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Contacting" />
+
+        <RadioButton
+            android:id="@+id/delivery_add_radio_btn_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Completed" />
+
+        <RadioButton
+            android:id="@+id/delivery_add_radio_btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Cancel" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/delivery_add_edit_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="20dp"
+        android:hint="Note"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_add_radio_group" />
+
+    <Button
+        android:id="@+id/delivery_add_post_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="Post"
+        android:paddingHorizontal="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_add_edit_note" />
+
+    <Button
+        android:id="@+id/delivery_add_payment_paid_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="40dp"
+        android:text="Payment Received"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/delivery_add_post_btn"
+        app:layout_constraintStart_toStartOf="@+id/delivery_add_post_btn"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_add_post_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

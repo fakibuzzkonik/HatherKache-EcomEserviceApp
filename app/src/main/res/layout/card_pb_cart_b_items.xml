@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="2dp"
+    android:id="@+id/cardview_pb_cart_b"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    cardview:cardCornerRadius="4dp"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginVertical="2dp"
+
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pb_cart_b_imagecard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            cardview:cardCornerRadius="6dp"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/pb_cart_b_tem_img"
+                android:layout_width="60dp"
+                android:layout_height="70dp"
+                android:background="#222d"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/pb_cart_b_product_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp"
+            android:text="Product Name"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toEndOf="@+id/pb_cart_b_imagecard"
+            cardview:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pb_cart_b_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="TK 2000 X "
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            cardview:layout_constraintStart_toStartOf="@+id/pb_cart_b_product_name"
+            cardview:layout_constraintTop_toBottomOf="@+id/pb_cart_b_product_name" />
+
+        <TextView
+            android:id="@+id/pb_cart_b_product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="2"
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            cardview:layout_constraintStart_toEndOf="@+id/pb_cart_b_product_price"
+            cardview:layout_constraintTop_toTopOf="@+id/pb_cart_b_product_price" />
+
+        <TextView
+            android:id="@+id/pb_cart_b_product_price_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Tk 4000"
+            android:textColor="#2d2d2d"
+            android:textSize="13sp"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintTop_toTopOf="@+id/pb_cart_b_product_price" />
+        
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Ui.Level_E_Add">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/level_e_add_image_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Photos"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingHorizontal="30dp"
+                    android:layout_marginTop="40dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/level_e_photo_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/button"
+                    />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingHorizontal="40dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/level_e_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/level_e_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="From"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="textPersonName"
+                     />
+
+                <EditText
+                    android:id="@+id/level_e_bio_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="bio"
+                    android:inputType="textCapSentences"
+                    />
+                <EditText
+                    android:id="@+id/level_e_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:inputType="textCapSentences"
+                    />
+
+                <EditText
+                    android:id="@+id/level_e_search_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Search Keys"
+                    android:inputType="textCapSentences"
+                    />
+                <EditText
+                    android:id="@+id/level_e_priority_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Priority"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="number"
+                    />
+                <Spinner
+                    android:id="@+id/level_e_spiner_bar_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contextClickable="true"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="visible"
+                    />
+                <EditText
+                    android:id="@+id/level_e_bar_key_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Bar Key Add"
+                    android:visibility="gone"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="text"
+                    />
+                <EditText
+                    android:id="@+id/level_e_rating_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Rating"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="number"
+                    />
+
+
+                <EditText
+                    android:id="@+id/level_e_total_views_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Total Views"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="number"
+                    />
+                <EditText
+                    android:id="@+id/level_e_total_order_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Total Orders"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="number"
+                    />
+                <EditText
+                    android:id="@+id/level_e_total_quantity_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Total Quantity"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="number"
+                    />
+                <EditText
+                    android:id="@+id/level_e_total_quantity_limit_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Quantity Limit"
+                    android:textColor="@color/colorBlack"
+                    android:inputType="number"
+                    />
+
+
+                <EditText
+                    android:id="@+id/level_e_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:id="@+id/level_e_price_discount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Discount"
+                    android:inputType="number"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/level_e_publish_date_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:ems="10"
+                    android:hint="Publish Date"
+                    android:inputType="number"
+                    android:textSize="20sp"
+                    tools:visibility="gone" />
+                <EditText
+                    android:id="@+id/level_e_total_loved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Total Loved"
+                    android:inputType="number"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/level_e_privacy_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/level_e_public_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Public"
+                            android:layout_marginRight="20dp"/>
+                        <RadioButton android:id="@+id/level_e_private_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Private"
+                            android:layout_marginLeft="20dp"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:id="@+id/level_e_payment_mode_radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/level_e_perhour_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hourly"/>
+                        <RadioButton android:id="@+id/level_e_perday_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Daily"
+                            android:layout_marginLeft="5dp"/>
+                        <RadioButton android:id="@+id/level_e_perweek_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Weekly"
+                            android:layout_marginLeft="5dp"/>
+                        <RadioButton android:id="@+id/level_e_permonthly_radio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Monthly"
+                            android:layout_marginLeft="5dp"/>
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/level_e_update_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="30dp"
+                    android:visibility="gone"
+                    android:paddingHorizontal="50dp"
+                    android:text="UPDATE" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

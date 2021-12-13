@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Hather Kache</string>
+    <string name="long_text">hello there we are here to make a great community to you.hello there we are here to make a great community to you.hello there we are here to make a great community to you.hello there we are here to make a great community to you.hello there we are here to make a great community to you.hello there we are here to make a great community to you.hello there we are here to make a great community to you.</string>
+
+
+    <!--MAPS Start-->
+    <string name="google_maps_api_key">AIzaSyBUgyjmuFZdns68exQNcsxBX-TPVfeFLeA</string>
+    <!-- Fragments Names -->
+    <string name="fragment_set_map_address">Set Map</string>
+    <string name="fragment_user_list">User List</string>
+    <string name="fragment_image_list">Image List</string>
+
+    <string name="intent_user_list">intent_user_list</string>
+    <string name="intent_user_locations">intent_user_locations</string>
+</resources>
